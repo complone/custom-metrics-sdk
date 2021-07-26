@@ -44,7 +44,7 @@ public class ConsulClient {
                 consul_address.add(instanceList.get(i).getHost());
             }
         }catch(Exception e){
-            log.error("Encounter an error while using BNS:" +e.getMessage());
+            log.error("Encounter an error while using serviceInstance:" +e.getMessage());
         }
     }
     public ConsulClient(String token){
