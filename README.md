@@ -29,7 +29,7 @@ bin/flink run -m yarn-cluster -yqu bigdata \
 -yD metrics.reporter.prom.serviceName=deptA_wordcount_hello \
 -yD metrics.reporter.prom.consulToken=xxxxx \
 -c org.apache.flink.streaming.examples.socket.SocketWindowWordCount \
-examples/streaming/SocketWindowWordCount.jar --hostname 172.28.16.32 --port 9000
+examples/streaming/SocketWindowWordCount.jar --hostname 127.0.0.1 --port 8888
 
 Among them: yD metrics.reporter.prom.jobname=wordcount_hello is the parameter to modify the job name
 
